@@ -1,0 +1,4 @@
+Work distribution
+Stephen- Lead Programmer, made sure everyone was on task and that everything worked properly.  
+Mohammad- Tester and Secondary Programmer, tested the project and helped make sure the iPhones/TouchOSC worked
+Madison- Designer and Secondary Programmer, designed how the project would look and helped to make sure the Calendar portion worked

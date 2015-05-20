@@ -1,0 +1,22 @@
+.aPane {
+    -fx-opacity: 50%;
+}
+
+.main {
+    -fx-background-color: #EEEEEE;
+}
+
+.nav {
+    -fx-background-color: #442B80;
+}
+
+.table-row-cell {
+    -fx-cell-size: 40;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #f8cb00;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane styleClass="main" stylesheets="@normStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Lecture">
+      <children>
+      <VBox alignment="BOTTOM_CENTER" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_CENTER" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="imgView" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="@../img/Ullmer.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextArea promptText="Additional Info:" wrapText="true" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="1132.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" VBox.vgrow="ALWAYS">
+               <children>
+                  <TextArea text="CSC 4243 Interface Design and Technology (3)&#10;Prereq.: CSC 1253 or CSC 1350 or equivalent programming background. &#10;&#10;Human-computer interaction provides the bridges across which humans engage with computation. An overview and experience with the design of such interfaces. Programming and design projects employing both traditional graphical interfaces; handheld graphical interfaces; and tangible and embedded interfaces. All programming in Java languages." wrapText="true" HBox.hgrow="ALWAYS" />
+                  <TextArea promptText="Notes:" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
+                  <HBox alignment="BOTTOM_CENTER" minWidth="-Infinity" spacing="10.0" styleClass="nav" AnchorPane.bottomAnchor="1124.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="175.0">
+                      <children>
+                  <Label layoutX="20.0" layoutY="25.0" text="Enter:" textFill="#eeeeee">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="eventText" promptText="Event" />
+                  <Button layoutX="940.0" layoutY="20.0" mnemonicParsing="false" onAction="#searchAction" text="Search" textFill="#442b80" />
+                  <TextField fx:id="dayText" layoutX="307.0" layoutY="20.0" promptText="Day" />
+                  <TextField fx:id="timeText" layoutX="528.0" layoutY="20.0" promptText="Time" />
+                  <Button layoutX="182.0" layoutY="20.0" mnemonicParsing="false" onAction="#addAction" text="Add" textFill="#442b80" />
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label text="Presentation:" textFill="#eeeeee">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ToggleButton fx:id="sizeToggle" mnemonicParsing="false" onAction="#sizeAction" text="Personal" textFill="#442b80">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </ToggleButton>
+                      </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+                  </HBox>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </VBox>
+      </children>
+  </AnchorPane>

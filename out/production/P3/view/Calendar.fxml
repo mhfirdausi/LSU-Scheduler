@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Calendar">
+   <children>
+      <TableView fx:id="calTable" editable="true" onMouseClicked="#mouseClick" prefHeight="600.0" prefWidth="800.0" stylesheets="@normStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="dt" sortable="false" text="Day/Time" />
+          <TableColumn fx:id="sun" sortable="false" text="Sunday" />
+           <TableColumn fx:id="mon" sortable="false" text="Monday" />
+           <TableColumn fx:id="tues" sortable="false" text="Tuesday" />
+           <TableColumn fx:id="wed" sortable="false" text="Wednesday" />
+           <TableColumn fx:id="thurs" sortable="false" text="Thursday" />
+           <TableColumn fx:id="fri" sortable="false" text="Friday" />
+           <TableColumn fx:id="sat" sortable="false" text="Saturday" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
